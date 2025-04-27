@@ -1,0 +1,16 @@
+npm create vite@latest . --template react //directly creates in vite enviroment
+need to have VITE_APP in the env variable to access the files
+
+@supabase/supabase.js node module name
+
+need to import variable name like meta.env
+
+
+supabase = createClient(url, key)
+
+supaBase.from('table_name').insert([{description}->table-columns]:lists).select()->returns the whole values;
+
+supaBase.from('table_name').select(); returns the whole tables
+
+
+
