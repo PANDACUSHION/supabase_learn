@@ -1,0 +1,20 @@
+import Layout from './layout/Layout.jsx'
+import Home from './component/Home';
+import Create from './component/Create.jsx';
+import {Routes , Route} from 'react-router-dom'
+
+function App() {
+  return (
+    <>
+    <Layout>
+        <Routes>
+
+                <Route to="/"  element={<Home />}/>
+                <Route to="/add" element={<Create />} />
+        </Routes>
+        <Layout>
+    </>
+  )
+}
+
+export default App
