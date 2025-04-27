@@ -1,0 +1,11 @@
+import {createClient} from '@supabase/supabase-js'
+
+console.log(import.meta.env.VITE_SUPABASE_URL); // Check if the URL is loaded correctly
+console.log(import.meta.env.VITE_APP_SUPABASE_ANNON_KEY); // Check if the key is loaded correctly
+
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseKey = import.meta.env.VITE_APP_SUPABASE_ANNON_KEY;
+
+const supaBase = createClient(supabaseUrl,supabaseKey);
+
+export default supaBase;
